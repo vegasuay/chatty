@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fcfcfc;
+}
+
+.chat-area, .home {
+  margin-top: 60px;
+}
+
+.chat-area {
+  padding: 15px;
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.chat-area .chat-bubble {
+  background-color: #545b620d;
+  padding: 20px;
+  max-width: 300px;
+  word-wrap: break-word;
+  padding-top: 5px;
+  border-radius: 7px;
+  border: 2px solid #adb5bd;
+}
+
+.chat-bubble .chat-time {
+  font-size: 12px;
+  color: #757575;
+  text-align: right;
+}
+
+.chat-bubble .chat-user {
+  font-size: 12px;
+  color: #757575;
+  text-align: left;
+}
+
+.chat-bubble .chat-act {
+  font-size: 15px;
+  color: #757575;
+  text-align: left;
+  padding: 0px;
+}
+
+.chat-bubble .chat-act:hover {
+  background: #ccc;
+}
+
+.chat-area .chat-bubble.current-user {
+  margin-left: auto;
+  background-color: #a5d6a7a1;
+  border: 2px solid #28a745;
+}
+
+.form-control {
+  width: 60%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.contentSend{
+  display: flex;
+}
+
+.btcontentSend{
+  margin-left: 5px;
+}
+
+/*
+.btn {
+  margin-top: 10px;
+}
+*/
+.btn-submit {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.shadow-2{
+  box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,0.05);
+}
+
+.img-buttons{
+  width: 18px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .form-control {
+    width: 100%;
+  }
+
+  .chat-area .chat-bubble {
+    max-width: 250px;
+  }
+}
